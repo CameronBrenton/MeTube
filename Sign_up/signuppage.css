@@ -1,0 +1,189 @@
+/*main body configuration and styling*/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    justify-content:center;
+    grid-template-areas:
+    "a1"
+    "a2"
+    "a3"
+    "b1"
+}
+.header {
+    grid-area: h1;
+    display: grid;
+    font-size: medium;    
+}
+/*Google logo placement*/
+.logo {
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    grid-area: b;
+    align-content: center;  
+}
+/*main container styling and configuration*/
+.container_1{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas:
+    "h1 h1"
+    "a b"
+}
+/*sign-in container styling and placement*/
+.sign_in_container {
+    border: 2px solid rgb(161, 161, 161);
+    width: 755px;
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-area: a;
+    grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+    "area1 area1 area1b area1b"
+    "area2 area2 area2 area2"
+    "area3 area3 area3 area3"
+    "area3b area3b area3b area3b"
+    "area4 area4 area4b area4b"
+    "area5 area5 area5b area5b"
+    "area6 area6 area6 area6b"
+    "area7 area7 area7 area7b"
+}
+/*input container setup*/
+#first_name {
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+    grid-area: area1;
+    display: grid; 
+}
+
+#last_name {
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 4px;
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 40px;
+    margin-right: 20px;
+    grid-area: area1b;
+    display: grid; 
+}
+
+#email_address{
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-area: area2;
+    display: grid; 
+}
+
+.email_confirm { 
+    margin-left: 20px;
+    grid-area: area3;
+    display: grid;
+    font-size: small;
+}
+/*create new email url styling*/
+.create_new_email{
+    margin-left: 20px;
+    grid-area: area3b;
+    display: grid;
+    font-weight: bold;
+    color: blue;
+    font-size: medium;
+}
+
+#password{
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    grid-area: area4;
+    display: grid
+}
+
+#pass_confirm {
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    grid-area: area4b;
+    display: grid; 
+}
+.characters{
+    margin-left: 20px;
+    grid-area: area5;
+    display:grid;
+    font-size: small;   
+}
+/*sign in url styling*/
+.sign_in_instead{
+    margin-left: 20px;
+    margin-bottom: 40px;
+    grid-area: area7;
+    display: grid;
+    grid-row:span 2;
+    grid-column:span 2;
+    font-size: medium;
+    color: blue;
+    font-weight: bold;    
+}
+/*next button placement and styling*/
+.next_button {
+   display: table-cell;
+    vertical-align: middle;
+    grid-area: area7b;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    height: 30px;
+    width: 60px;   
+}
+/*checkbox placement*/
+.checkbox{
+    justify-items: left;
+    margin-left: 18px; 
+    grid-area: area6;
+    display: block;
+}
+
+#show_password{
+    display:inline;
+    position: relative;
+}
+
+#show_password_label{
+    display:inline;
+    position: relative;
+}
+/*bottom element distribution below sign in container*/
+.bottom_elements{
+    display: grid;
+    grid-area: b1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-content: space-between;
+    grid-template-areas:
+    "ar1 ar2 ar3 ar4"
+}

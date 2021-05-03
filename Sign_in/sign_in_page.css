@@ -1,0 +1,114 @@
+/*body styling*/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    margin-left:400px;
+    margin-right:400px;
+    margin-top:50px;
+    justify-content: center;
+    grid-template-areas:
+    "body1"
+    "body2"
+}
+/*configure main container*/
+.main_container{
+    border: 2px solid rgb(161, 161, 161);
+    margin: center;
+    width: 500px;
+    max-width: 800px;
+    border-radius: 6px;
+    display: grid;
+    grid-area: body1;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+}
+/*header setup*/
+.header{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-area: a;
+    text-align: center;
+}
+/*sign-up container configure*/
+.sign_up_container{
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-gap: 1rem;
+    grid-area: b;
+    grid-template-rows: .8fr .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    display: grid;
+    grid-template-areas:
+    "area1 area1 area1 area1"
+    "area2 area2 area2 area2"
+    "area3 area3 area3 area3"
+    "area4 area4 area4 area4b"
+    "area5 area5 area5 area5"
+    "area6 area6 area6 area6"
+    "area7 area7 area7 area7b"
+}
+/*set up input container*/
+.email_phone{
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-area: area1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+/*input field styling*/
+#email_or_phone{
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 4px;
+}
+/*forgot email url styling*/
+.forgot_email{
+    display: grid;
+    grid-area: area2;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-color: blue;
+}
+.not_your_computer{
+    display: grid;
+    grid-area: area3;
+    margin-left: 20px;
+}
+/*create account url styling*/
+.create_account{
+    display: grid;
+    grid-area: area4;
+    margin-left: 20px;
+    font-weight: bold;
+    font-color: blue;
+}
+/*next button styling*/
+.next_button{
+    display: table-cell;
+    vertical-align: middle;
+    grid-area: area4b;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    height: 30px;
+    width: 60px;
+}
+/*configuring bottom elements under sign in container*/
+.bottom_elements{
+    display: grid;
+    width:505px;
+    font-size: small;
+    grid-area: body2;
+    justify-content: space-between;
+    grid-template-areas:
+    "ar1 ar2 ar3 ar4"
+}

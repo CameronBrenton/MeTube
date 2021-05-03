@@ -1,0 +1,171 @@
+body{
+    font-family: sans-serif;
+    background-color: white;
+    margin: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100px 20fr;
+    grid-template-areas:
+    "left right"
+}
+/*styling for video caption text */
+h2{
+    font-weight: bold;
+    font-size: medium;
+}
+
+p{
+    color: rgb(100, 100, 100);
+    font-weight:500;
+    font-size: small;
+}
+
+.image_resize{
+  min-width: 290px;
+  min-height: 160px;
+  width: 100%;
+  height: auto;
+}
+/*configuring main container grid*/
+.main_container{
+    min-width: 1000px;
+    display: grid;
+    grid-area: right;
+    grid-template-areas:
+    "a b b d"
+    "e f g h"
+    "i j k l"
+    "m n o p"
+}
+/*configuring sidebar grid*/
+.sidebar{
+    display: grid;
+    grid-area: left;
+    margin-right: 10px;
+    grid-template-areas:
+    "q"
+    "r"
+    "s"
+    "t"
+    "u"
+}
+
+.sidebar_icons{
+  display: grid;
+  grid-area: q;
+  margin-top: 24px;
+  grid-template-areas:
+  "x1"
+  "x2"
+  "x3"
+  "x4"
+  "x5"
+}
+/*sidebar icon styling*/
+.hamburger{
+  display: grid;
+  grid-area: x1;
+  margin-left: 36px;
+}
+.home{
+  display: grid;
+  grid-area: x2;
+  margin-left: 32px;
+  
+}
+.trending{
+  display: grid;
+  grid-area: x3;
+  margin-left: 24px;
+}
+.subscriptions{
+  display: grid;
+  grid-area: x4;
+  margin-left: 10px;
+}
+.library{
+  display: grid;
+  grid-area: x5;
+  margin-left: 28px;
+}
+
+/*distribute top buttons evenly across screen*/
+.top_buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 48px;
+    grid-area: e;
+    grid-column: 1/5;
+    grid-row: span 2;      
+}
+/*top button styling*/
+#buttons{
+    background-color: lightgray;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(75, 75, 75);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/*MeTube logo*/
+.logo_wrapper{
+    grid-area: a;
+}
+.logo{
+    display:grid;
+    margin-top: 15px;
+    height: 40px;
+}
+/*searchbar configure*/
+.searchbar{
+    display:grid;
+    grid-area: b;
+    font-family: sans-serif;
+    justify-content: center;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+/*distribute header icons within container*/
+.header_icons{
+    display:grid;
+    grid-area: d;
+    justify-content: space-between;
+    grid-template-areas:
+    "a1 b1 c1 d1 e1"
+    
+}
+/*fine-tune header icon alignment*/
+.video{
+    display:grid;
+    grid-area: b1;
+    margin-top: 23px;
+}
+.apps_alt{
+    display:grid;
+    grid-area: c1;
+    margin-top: 23px;
+}
+.group30{
+    display:grid;
+    grid-area: d1;
+    margin-top: 18px;
+}
+.group3{
+    display:grid;
+    grid-area: e1;
+    margin-top: 14px;
+}
+.mic{
+    display:grid;
+    grid-area: a1;
+    margin-top: 22px;
+    margin-right: 50px;
+}

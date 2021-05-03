@@ -1,0 +1,185 @@
+body{
+    display: grid;
+    margin: center;
+    font-family: sans-serif;
+}
+/*main container configuration*/
+.main_container{
+    min-width: 1000px;
+    display: grid;
+    margin: center;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "a a a a a"
+    "f g g i i"
+    "f l l i i"
+    "p q r i i"
+}
+/*header setup*/
+.header{
+  display: grid;
+  grid-area: a;
+  grid-template-areas:
+  "h1 h2 h2 h4 h4"
+}
+/*MeTube logo placement*/
+.logo{
+    display:grid;
+    grid-area: h1;
+    margin-top: 12px;
+    height: 40px;
+}
+/*searchbar setup and styling*/
+.searchbar{
+    display:grid;
+    grid-area: h2;
+    justify-content: center;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+/*header icon distribution*/
+.header_icons{
+    display:grid;
+    grid-area: h4;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-right: 30px;
+    grid-template-areas:
+    "a1 b1 c1 d1 e1"
+}
+
+/*related-videos container setup*/
+.video_list{
+  max-width:480px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-area: i;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: (12 1fr);
+  max-height: 1300px;
+  
+}
+/*video thumbnail column*/
+.rec_videos{
+  display: inline-flex;
+  grid-column: 1;
+ 
+}
+/*thumbnail captions column*/
+.video_text{
+  display: inline-flex;
+  grid-column: 2;
+  font-size: xx-small;
+  margin-left: 5px;
+} 
+/*header icon placements*/
+.mic{
+    display:grid;
+    grid-area: a1;
+    margin-top: 5px;
+    margin-right: 60px;
+}
+
+.video{
+    display:grid;
+    grid-area: b1;
+    margin-top: 5px;
+}
+
+.group3{
+    display:grid;
+    grid-area: e1;
+    margin-bottom: 25px;
+}
+
+.group30{
+    display:grid;
+    grid-area: d1;
+    margin-top: 1px;
+}
+
+.apps_alt{
+    display:grid;
+    grid-area: c1;
+    margin-top: 5px;
+}
+/*main video container*/
+.musk_div{
+    padding-left: 45px;
+    display:grid;
+    grid-area: g;
+}
+/*main video image*/
+img.musk_image{
+  min-width: 800px;
+  width: 100%;
+  height: auto;
+  
+}
+/*interaction icons*/
+.like_dislike_div{
+  display: grid;
+  justify-content: right;
+  grid-template-areas:
+  "x1 x2 x3 x4 x5"
+}
+/*comment section container setup*/
+.comment_section{
+  padding-left: 45px;
+  height: 100px;
+  display: grid;
+  grid-area: l;
+  justify-content: space-between;
+  grid-template-areas:
+  "header header header"
+  "input input button"
+  "comments comments comments"  
+}
+/*comment input wrapper setup and styling*/
+#comment_input{
+  display: grid;
+  grid-area: input;
+  height: 30px;
+  min-width: 750px;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+.subscribe_class{
+  display: grid;
+  grid-template-areas:
+  "left1 right2"
+}
+.subscribe{
+  display: inline-flex;
+  justify-self: right;
+  align-self: center;
+  grid-area: right2;
+  border-radius: 2px;
+}
+/*post button setup and styling*/
+#post_button{
+  display: table-cell;
+  vertical-align: middle;
+  grid-area: button;
+  border: none;
+  border-radius: 2px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(188, 38, 26);
+}
+/*comment output area setup and style*/
+.copy_container{
+  margin-bottom: 5px;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+/*poster's name output area*/
+#output{
+  grid-area: comments;
+  margin-top: 40px;
+}
